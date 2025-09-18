@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+env/
+venv/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Project
+uploaded_state.json
+user-data/
+
+

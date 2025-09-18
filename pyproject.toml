@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "readarr-to-play-books"
+version = "0.1.0"
+description = "Upload Readarr-imported books to Google Play Books via Playwright."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Community contributors" }
+]
+dependencies = [
+  "playwright>=1.42"
+]
+
+[project.urls]
+Homepage = "https://github.com/your-org/readarr-to-play-books"
+Issues = "https://github.com/your-org/readarr-to-play-books/issues"
+
+[project.scripts]
+readarr-to-play-books = "readarr_to_play_books.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/readarr_to_play_books"]
+
+
