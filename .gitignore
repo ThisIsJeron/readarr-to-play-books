@@ -16,5 +16,6 @@ dist/
 # Project
 uploaded_state.json
 user-data/
+.env
 
 
